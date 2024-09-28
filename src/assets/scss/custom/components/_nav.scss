@@ -1,0 +1,52 @@
+// 
+// _nav.scss
+// 
+
+
+.nav-tabs,.nav-pills {
+  .nav-link {
+    color: var(--#{$prefix}emphasis-color);
+    font-weight: 600;
+  }
+  .nav-link{
+    &.disabled{
+      color:var(--#{$prefix}nav-link-disabled-color);
+    }
+  }
+}
+
+.nav-tabs-custom {
+  .nav-item {
+    position: relative;
+
+    .nav-link {
+      border: none !important;
+      font-weight: 600;
+    }
+  }
+}
+
+.nav-tabs-custom > li > a {
+  color: var(--#{$prefix}emphasis-color);
+}
+
+.nav-tabs-custom > li > a::after {
+  content: "";
+  background: var(--#{$prefix}primary);
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: -1px;
+  transition: all 250ms ease 0s;
+  transform: scale(0);
+}
+
+.nav-tabs-custom > li > a.active::after, .nav-tabs-custom > li:hover > a::after {
+  transform: scale(1);
+}
+
+.nav-tabs-custom > li > a.active {
+  color: var(--#{$prefix}primary)!important;
+}
+

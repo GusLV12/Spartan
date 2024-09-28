@@ -1,0 +1,34 @@
+// form.scss
+
+[type="tel"],
+[type="url"],
+[type="email"],
+[type="number"] {
+ &::placeholder{
+   text-align: left /*rtl: right*/;
+ }
+}
+
+.form-check{
+  position: relative;
+  text-align: left /*rtl: right*/;
+}
+
+.form-check-label{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.form-check-input{
+  background-color: var(--#{$prefix}body-bg);
+}
+
+.form-control{
+  background-color: var(--#{$prefix}input-bg);
+  color:var(--#{$prefix}secondary-color);
+
+  &:focus{
+    background-color: var(--#{$prefix}input-bg);
+    border-color: var(--#{$prefix}border-color);
+  }
+}
