@@ -33,8 +33,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-12 mb-4 pt-5">
-                            <div id="morris-bar-example" class="morris-charts morris-chart-height" data-colors='["--bs-primary", "--bs-info"]'></div>
-
+                            <!-- Botones de fechas -->
                             <div class="mt-4 text-center">
                                 <button type="button" class="btn btn-outline-primary ms-1 waves-effect waves-light">Year
                                     2017</button>
@@ -43,6 +42,16 @@
                                 <button type="button" class="btn btn-outline-primary ms-1 waves-effect waves-light">Year
                                     2019</button>
                             </div>
+
+                            <!-- Grfica de barras -->
+                            <div id="morris-bar-example" class="morris-charts morris-chart-height" data-colors='["--bs-primary", "--bs-info"]'></div>
+
+                            <!-- Botones de paginación -->
+                            <div class="mt-4 d-flex justify-content-end me-5">
+                                <button type="button" class="btn btn-outline-primary ms-1 waves-effect waves-light">Anterior</button>
+                                <button type="button" class="btn btn-outline-info ms-1 waves-effect waves-light">Siguiente</button>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -84,7 +93,7 @@
 
                 <div class="row">
 
-                    <div class="col-xl-4">
+                    <div class="col-xl-6">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-4">Monthly Earnings</h4>
@@ -105,7 +114,28 @@
                         </div>
                     </div>
 
-                    <div class="col-xl-8">
+                    <div class="col-xl-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title mb-4">Monthly Earnings</h4>
+
+                                <div class="row text-center mt-4">
+                                    <div class="col-6">
+                                        <h5 class="mb-2 font-size-18">56241</h5>
+                                        <p class="text-muted text-truncate">Marketplace</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5 class="mb-2 font-size-18">23651</h5>
+                                        <p class="text-muted text-truncate">Total Income</p>
+                                    </div>
+                                </div>
+
+                                <div id="morris-donut-example2" class="morris-charts morris-chart-height" data-colors='["#ebeff2", "--bs-primary", "--bs-info"]'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-xl-8">
                         <div class="card">
                             <div class="card-body">
                                 <h4 class="card-title mb-4">Email Sent</h4>
@@ -128,7 +158,7 @@
                                 <div id="morris-area-example" class="morris-charts morris-chart-height" data-colors='["rgb(200,200,200)", "--bs-primary", "--bs-info"]'></div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
                 <!-- end row -->
