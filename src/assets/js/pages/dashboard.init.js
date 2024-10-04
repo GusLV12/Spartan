@@ -82,7 +82,7 @@ function ChartColorChange(chartupdate, chartId) {
       labels: labels,
       gridLineColor: "rgba(108, 120, 151, 0.1)",
       gridTextColor: "#98a6ad",
-      barSizeRatio: 0.2,
+      barSizeRatio: 0.6,
       resize: true,
       hideHover: "auto",
       barColors: lineColors,
