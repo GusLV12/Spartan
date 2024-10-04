@@ -29,6 +29,7 @@
     <!-- ============================================================== -->
     <div class="main-content">
         <div class="page-content">
+            <!-- Bar charts heading -->
             <div class="header-bg">
                 <div class="container-fluid">
                     <div class="row">
@@ -44,14 +45,18 @@
                             </div>
 
                             <!-- Grfica de barras -->
-                            <div id="morris-bar-example" class="morris-charts morris-chart-height" data-colors='["--bs-primary", "--bs-info"]'></div>
+                            <div id="morris-bar-example" class="morris-charts morris-chart-height"
+                                data-colors='["--bs-primary", "--bs-info"]'></div>
 
                             <!-- Botones de paginación -->
                             <div class="mt-4 d-flex justify-content-end me-5">
-                                <button type="button" class="btn btn-outline-primary ms-1 waves-effect waves-light">Anterior</button>
-                                <button type="button" class="btn btn-outline-info ms-1 waves-effect waves-light">Siguiente</button>
+                                <button type="button" id="btn-previous"
+                                    class="btn btn-outline-primary ms-1 waves-effect waves-light">Anterior</button>
+                                <button type="button" id="btn-next"
+                                    class="btn btn-outline-info ms-1 waves-effect waves-light">Siguiente</button>
                             </div>
-                            
+
+
                         </div>
                     </div>
                 </div>
@@ -109,7 +114,8 @@
                                     </div>
                                 </div>
 
-                                <div id="morris-donut-example" class="morris-charts morris-chart-height" data-colors='["#ebeff2", "--bs-primary", "--bs-info"]'></div>
+                                <div id="morris-donut-example" class="morris-charts morris-chart-height"
+                                    data-colors='["#ebeff2", "--bs-primary", "--bs-info"]'></div>
                             </div>
                         </div>
                     </div>
@@ -130,7 +136,8 @@
                                     </div>
                                 </div>
 
-                                <div id="morris-donut-example2" class="morris-charts morris-chart-height" data-colors='["#ebeff2", "--bs-primary", "--bs-info"]'></div>
+                                <div id="morris-donut-example2" class="morris-charts morris-chart-height"
+                                    data-colors='["#ebeff2", "--bs-primary", "--bs-info"]'></div>
                             </div>
                         </div>
                     </div>
