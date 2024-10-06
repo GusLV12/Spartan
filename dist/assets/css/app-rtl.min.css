@@ -3988,4 +3988,10 @@ pre[class*=language-] {
     transform: rotate(-360deg);
   }
 }
+.mass-msg-header {
+  background-color: #260965;
+  color: white;
+  height: 20vh;
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=app-rtl.min.css.map */
