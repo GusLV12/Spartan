@@ -1,44 +1,155 @@
 @@include("partials/main.html")
 
 <head>
-  @@include("partials/title-meta.html", {"title": "Mensajes Masivos"})
-  @@include("partials/head-css.html")
+    @@include("partials/title-meta.html", {"title": "Mensajes Masivos"})
+
+    <!-- Plugins css -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" />
+    @@include("partials/head-css.html")
 </head>
 
 @@include("partials/body.html")
 
 <!-- Loader -->
 <div id="preloader">
-  <div id="status">
-    <div class="spinner"></div>
-  </div>
-</div>
-
-<div id="layout-wrapper">
-  @@include("partials/topbar.html", {"pagetitle": "Mensajes Masivos"})
-  @@include("partials/sidebar.html")
-
-  <!-- ============================================================== -->
-  <!-- Start right Content here -->
-  <!-- ============================================================== -->
-  <div class="main-content">
-    <div class="page-content">
-      <div class="container-fluid">
-        <div class="col-12 mb-4 pt-5 mass-msg-header">
-          <div class="row ps-5">
-            <div class="col-4">SALES SOFTWARE</div>
-            <div class="col-8">
-              <img src="assets/images/logos/Whats.png" alt="WP" />
-              <h4 class="text-white mt-3">Mensajes Masivos</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div id="status">
+        <div class="spinner"></div>
     </div>
-    @@include("partials/footer.html")
-  </div>
-
-  @@include("partials/right-sidebar.html")
-  @@include("partials/vendor-scripts.html")
-  <script src="assets/js/app.js"></script>
 </div>
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+    @@include("partials/topbar.html", {"pagetitle": "Mensajes Masivos"})
+    @@include("partials/sidebar.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="col-12 mb-4 pt-5 mass-msg-header">
+                    <div class="row ps-5">
+                        <div class="col-4">SALES SOFTWARE</div>
+                        <div class="col-8">
+                            <img src="assets/images/logos/Whats.png" alt="WP" />
+                            <h4 class="text-white mt-3">Mensajes Masivos</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="row needs-validation" action="#" novalidate>
+                                <!-- Select dropdown -->
+                                <div class="mb-3 row position-relative">
+                                    <label class="col-sm-2 col-form-label">Seleccionar Evento</label>
+                                    <div class="col-sm-10">
+                                        <select class="form-select">
+                                            <option selected>Open this select menu</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- Textearea -->
+                                <div class="mb-3 position-relative row">
+                                    <div class="col-md-8">
+                                        <label class="form-label">Mensaje a Enviar</label>
+                                        <textarea class="form-control" rows="5" required></textarea>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label class="form-label">Selecciona mensaje</label>
+                                        <select class="form-select">
+                                            <option selected>Mensajes Guardados</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                        <div class="d-grid mt-4">
+                                        <button type="button" class="btn btn-purple btn-lg waves-effect waves-light">Guardar</button>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <!-- Upload file -->
+                                          <div class="col-12">
+                                              <div class="card">
+                                                  <div class="card-body">
+                                                      <div class="mb-5">
+                                                          <div action="#" class="dropzone">
+                                                              <div class="fallback">
+                                                                  <input name="file" type="file" multiple="multiple">
+                                                              </div>
+                                                              <div class="dz-message needsclick">
+                                                                  <div class="mb-3">
+                                                                      <i class="display-4 text-muted mdi mdi-cloud-upload"></i>
+                                                                  </div>
+                                                                  <h4>Subir CSV</h4>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                <!-- Enviar formulario -->
+                                <div class="col-12 row">
+                                    <div class="col-4 d-flex flex-column justify-content-center align-items-center">
+                                        <h3>Programar envío</h3>
+                                        <input type="checkbox" id="switch1" switch="none" checked />
+                                        <label for="switch1" data-on-label="Sí" data-off-label="No"></label>
+                                    </div>                                    
+                                    <div class="col-4 justify-content-center">
+                                        <div>
+                                            <div class="input-group" id="datepicker2">
+                                                <input type="text" class="form-control" placeholder="mm/dd/yyyy"
+                                                    data-provide="datepicker" data-date-autoclose="true"
+                                                    data-date-container='#datepicker2'>
+                                                <div class="input-group-text">
+                                                    <span><i class="mdi mdi-calendar"></i></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-grid col-4">
+                                        <button class="btn btn-success" type="submit">Enviar</button>
+                                    </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- container-fluid -->
+        
+        @@include("partials/footer.html")
+    </div>
+    <!-- End Page-content -->
+
+    @@include("partials/right-sidebar.html")
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/vendor-scripts.html")
+
+<!-- Plugins js -->
+<script src="assets/libs/dropzone/min/dropzone.min.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/libs/select2/js/select2.min.js"></script>
+<script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
+<script src="assets/libs/spectrum-colorpicker2/spectrum.min.js"></script>
+<script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js"></script>
+<script src="assets/libs/admin-resources/bootstrap-filestyle/bootstrap-filestyle.min.js"></script>
+<script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js"></script>
+</body>
+
+</html>
