@@ -1,0 +1,123 @@
+@@include("partials/main.html")
+
+<head>
+  @@include("partials/title-meta.html", {"title": "Mensajes En Tiempo Real"})
+  @@include("partials/head-css.html")
+</head>
+
+@@include("partials/body.html")
+
+<!-- Loader -->
+<div id="preloader">
+  <div id="status">
+    <div class="spinner"></div>
+  </div>
+</div>
+
+<!-- Container Start -->
+<div id="layout-wrapper">
+  @@include("partials/topbar.html", {"pagetitle": "Mensajes En Tiempo Real"})
+  @@include("partials/sidebar.html")
+
+  <!-- ============================================================== -->
+  <!-- Start right Content here -->
+  <!-- ============================================================== -->
+  <div class="main-content">
+    <div class="page-content">
+      <!-- Banner  -->
+      <div class="container-fluid">
+        <div class="col-12 mb-4 pt-5 mass-msg-header">
+          <div class="row ps-5">
+            <div class="col-4">SALES SOFTWARE</div>
+            <div class="col-8">
+              <img src="assets/images/logos/Whats.png" alt="WP" />
+              <h4 class="text-white mt-3">Mensajes En Tiempo Real</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Banner  -->
+
+      <!-- initial Form -->
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <form class="row needs-validation" action="#" novalidate>
+                <!-- Select dropdown -->
+                <div class="col-12 row">
+                  <div class="col-6 mb-3 position-relative">
+                    <label class="form-label" for="validationCustom01">Nombre Del Remitente</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Nombre del Spartan"
+                      required />
+                    <div class="valid-tooltip">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-6 mb-3 position-relative">
+                    <label class="form-label">Número Telefónico</label>
+                    <div>
+                      <input data-parsley-type="digits" type="number" class="form-control"
+                        placeholder="Número Telefónico" required />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-3 position-relative row">
+                  <div class="col-6 mb-3 position-relative">
+                    <label class="form-label">Porcentaje de Leads de Campaña</label>
+                    <div>
+                      <input data-parsley-type="digits" type="number" class="form-control"
+                        placeholder="Porcentaje de Leads de Campaña" required />
+                    </div>
+                  </div>
+                  <div class="col-6 row">
+                    <div class="col-6">
+                      <label class="form-label">Eventos</label>
+                      <select class="form-select">
+                        <option selected>Eventos Guardados</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center m-auto mt-4">
+                      <button type="button" class="btn btn-purple btn-lg waves-effect waves-light w-100">Subir</button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 row">
+                  <label class="form-label">Mensaje a Recibír</label>
+                  <textarea class="form-control" rows="5" required></textarea>
+
+                  <div class="d-flex justify-content-end mt-5">
+                    <div class="col-4">
+                      <button class="btn btn-success w-100" type="submit">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End initial Form -->
+
+    </div>
+  </div>
+</div>
+<!-- END layout-wrapper -->
+
+@@include("partials/right-sidebar.html")
+
+@@include("partials/vendor-scripts.html")
+
+<!-- Script initial  -->
+<script src="assets/js/app.js"></script>
+
+<!-- Script frm page wp-real-time-messages.html -->
+</body>
+
+</html>
