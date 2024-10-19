@@ -1,0 +1,90 @@
+@@include("partials/main.html")
+
+<head>
+    @@include("partials/title-meta.html", {"title": "Login"})
+
+    @@include("partials/head-css.html")
+
+</head>
+<!-- Cambio de bg login page -->
+<body class="bg-login">
+
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div class="account-pages">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="d-flex justify-content-center content-login">
+                    <img src="assets/images/logos/logo.png" class="img-fluid logo-dark mx-auto" alt="Logo Spartan">
+                </div>                
+                <div class="col-md-8 col-lg-6 col-xl-5">
+                  <!-- Contenedor imagen spartan -->
+                    <div class="card card-bg justify-content-center">
+                        <div class="card-body justify-content-center">
+                                <form class="form-horizontal" action="index.html">
+
+                                    <div class="text-white mb-3">
+                                        <label class="form-label fs-3" for="username">Email / Número Tel.</label>
+                                        <input type="text" class="form-control bg-white" id="username"
+                                            placeholder="Ingresa usuario">
+                                    </div>
+
+                                    <div class="text-white mb-3">
+                                        <label class="form-label fs-3" for="userpassword">Contraseña</label>
+                                        <input type="password" class="form-control bg-white" id="userpassword"
+                                            placeholder="Ingresa contraseña">
+                                    </div>
+
+                                    <div class="mb-3 row mt-4">
+                                        <div class="col-sm-6">
+                                            <div class="form-checkbox text-white">
+                                                <input type="checkbox" class="form-check-input me-1"
+                                                    id="customControlInline">
+                                                <label class="form-label" class="form-check-label"
+                                                    for="customControlInline">Recordarme</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <button class="btn btn-primary w-md waves-effect waves-light"
+                                                type="submit">Entrar</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="text-primary col-12 mt-4">
+                                            <a href="pages-recoverpw.html" class="text-primary"><i
+                                                    class="mdi mdi-lock"></i> ¿Olvidaste la contraseña?</a>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="mt-5 text-center text-white">
+                        <!-- <p>Don't have an account ? <a href="pages-register.html" class="fw-bold text-primary"> Signup
+                                Now </a> </p>
+                        <p> -->
+                            ©<script>document.write(new Date().getFullYear())</script> Saprtan Waypoint.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    @@include("partials/vendor-scripts.html")
+
+    <script src="assets/js/app.js"></script>
+
+</body>
+
+</html>
