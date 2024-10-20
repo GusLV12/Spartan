@@ -40,7 +40,6 @@ File: Main Css File
 @import "custom/components/print";
 @import "custom/components/form";
 
-
 // Plugins
 @import "custom/plugins/custom-scrollbar";
 @import "custom/plugins/calendar";
@@ -68,8 +67,7 @@ File: Main Css File
 @import "custom/plugins/google-map";
 @import "custom/plugins/vector-maps";
 @import "custom/plugins/touchspin";
-@import "custom/plugins/xeditable"; 
-
+@import "custom/plugins/xeditable";
 
 // Pages
 @import "custom/pages/authentication";
@@ -80,3 +78,6 @@ File: Main Css File
 // views
 @import "custom/views/massMsg";
 @import "custom/views/login";
+
+// partials
+@import "custom/partials/sidebar";

@@ -4012,4 +4012,8 @@ pre[class*=language-] {
 .content-login {
   max-height: 30rem;
 }
+
+.side-logo {
+  width: 12rem;
+}
 /*# sourceMappingURL=app-rtl.min.css.map */

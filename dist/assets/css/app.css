@@ -4013,9 +4013,13 @@ pre[class*=language-] {
 
 .content-login {
   max-height: 30rem;
-}op: -3rem;
 }
 
-.content-login {
-  max-height: 30rem;
+.side-logo {
+  width: 12rem;
+} max-height: 30rem;
+}
+
+.side-logo {
+  width: 12rem;
 }
