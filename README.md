@@ -51,3 +51,7 @@ npm install -g gulp
 | `yarn install`| Install project dependencies       |
 | `gulp`        | Runs the project locally with live reload. Accessible at <http://localhost:3000>.                                      |
 | `gulp build`  | Generates the production build in the /dist directory.       |
+
+# Views
+
+* Initial login **spartan-login.html**

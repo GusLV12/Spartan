@@ -4003,12 +4003,6 @@ pre[class*=language-] {
   background: transparent;
 }
 
-.logo-dark {
-  max-height: 40rem;
-  aspect-ratio: 2/1;
-  margin-top: -3rem;
-}
-
 .content-login {
   max-height: 30rem;
 }
